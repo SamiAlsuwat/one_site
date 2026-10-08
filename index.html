@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Courses</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="profile">
+    <div class="avatar" id="avatar"></div>
+    <h1 id="name"></h1>
+    <p class="title" id="title"></p>
+    <p class="bio" id="bio"></p>
+    <nav class="contact" id="contact"></nav>
+  </header>
+
+  <main>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search courses…" aria-label="Search courses">
+      <div class="filters" id="filters"></div>
+    </div>
+    <p class="count" id="count"></p>
+    <section class="grid" id="grid"></section>
+    <p class="empty" id="empty" hidden>No courses match your search.</p>
+  </main>
+
+  <footer><span id="year"></span> · <span id="footer-name"></span></footer>
+
+  <script src="courses.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
