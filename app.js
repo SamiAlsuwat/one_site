@@ -59,6 +59,12 @@
     if (c.category) top.appendChild(el("span", "tag", c.category));
     if (top.children.length) a.appendChild(top);
     a.appendChild(el("h2", null, c.title));
+    if (c.titleAr) {
+      const ar = el("p", "title-ar", c.titleAr);
+      ar.lang = "ar";
+      ar.dir = "rtl";
+      a.appendChild(ar);
+    }
     if (c.description) a.appendChild(el("p", null, c.description));
     a.appendChild(el("span", "open", "Open course →"));
     return a;
@@ -68,7 +74,7 @@
     const q = $("search").value.trim().toLowerCase();
     const list = COURSES.filter((c) =>
       (activeCategory === "All" || c.category === activeCategory) &&
-      [c.title, c.code, c.description, c.category].join(" ").toLowerCase().includes(q)
+      [c.title, c.titleAr, c.code, c.description, c.category].join(" ").toLowerCase().includes(q)
     );
     $("grid").replaceChildren(...list.map(card));
     $("empty").hidden = list.length > 0;

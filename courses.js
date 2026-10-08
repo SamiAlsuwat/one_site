@@ -16,9 +16,11 @@ const PROFILE = {
 };
 
 // Add one entry per course. Only "title" and "url" are required.
+// "titleAr" is the optional Arabic name shown under the English title.
 const COURSES = [
   {
     title: "Computer Programming",
+    titleAr: "برمجة الحاسب",
     code: "",
     description: "Programming fundamentals: variables, control flow, functions, and problem solving.",
     category: "Programming",
@@ -26,6 +28,7 @@ const COURSES = [
   },
   {
     title: "Object-Oriented Programming",
+    titleAr: "البرمجة كائنية التوجه",
     code: "",
     description: "Classes, objects, encapsulation, inheritance, and polymorphism.",
     category: "Programming",
@@ -33,6 +36,7 @@ const COURSES = [
   },
   {
     title: "Data Structures",
+    titleAr: "هياكل البيانات",
     code: "",
     description: "Arrays, linked lists, stacks, queues, trees, and their algorithms.",
     category: "Programming",
@@ -40,6 +44,7 @@ const COURSES = [
   },
   {
     title: "Database Systems",
+    titleAr: "نظم قواعد البيانات",
     code: "",
     description: "Data modeling, relational databases, and SQL.",
     category: "Databases",
@@ -47,6 +52,7 @@ const COURSES = [
   },
   {
     title: "Network Fundamentals",
+    titleAr: "أساسيات الشبكات",
     code: "",
     description: "Networking basics: models, protocols, addressing, and devices.",
     category: "Networking",
