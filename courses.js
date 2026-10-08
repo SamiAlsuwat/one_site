@@ -28,7 +28,7 @@ const COURSES = [
   },
   {
     title: "Object-Oriented Programming",
-    titleAr: "البرمجة كائنية التوجه",
+    titleAr: "البرمجة الشيئية",
     code: "",
     description: "Classes, objects, encapsulation, inheritance, and polymorphism.",
     category: "Programming",
