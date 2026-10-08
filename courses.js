@@ -11,7 +11,7 @@ const PROFILE = {
   photo: "",
   // Optional contact links. Remove any you don't need.
   links: [
-    { label: "Email", url: "mailto:samialsuwat@gmail.com" },
+    { label: "Email", url: "mailto:Samialsuwat@gmail.com" },
   ],
 };
 
